@@ -1,4 +1,5 @@
 # unvt-ne
+![deploy](https://github.com/watergis/unvt-ne/workflows/deploy/badge.svg)
 
 This repository is to manage Natural Earth based United Vector Tiles.
 
@@ -24,6 +25,12 @@ The `ne-tiles.mbtiles` will be generated under data directory.
 ## Configuration
 
 You can select which data from Natural Earth you need to include your tiles.
+
+## Download mbtiles
+
+```
+wget https://watergis.github.io/unvt-ne/ne_tiles.mbtiles
+```
 
 ## License
 
