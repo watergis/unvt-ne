@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  naru:
+    image: watergis/unvt-ne
+    build:
+      dockerfile: Dockerfile
+      context: .
+    entrypoint: '/usr/src/app/entrypoint.sh'
+    volumes:
+      - ./public:/usr/src/app/public
+      - ./src:/usr/src/app/src
+    environment: 
+      - SOURCEDIR=/usr/src/app/src
+      - CONFIG=/usr/src/app/config.json
+      - MBTILES=/usr/src/app/public/ne_tiles.mbtiles
+      - MAXZOOM=6
